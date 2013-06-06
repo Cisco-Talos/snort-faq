@@ -1,3 +1,5 @@
 Community rules refer to all rules that have been submitted by members of the open source community or Snort Integrators. These rules are freely available to all Snort users and are governed by the GPLv2.   If you wish to contribute, please send your rules along with and packet captures of the data to the Snort-sigs mailing list: [Found here](http://www.snort.org/community/mailing-lists).
 
 The Community ruleset is available for download [here](http://www.snort.org/snort-rules#community).
+
+The Community Ruleset is a GPLv2 VRT certified ruleset that is distributed free of charge without any VRT License restrictions. This ruleset is updated daily and is a subset of the subscriber ruleset. If you are a VRT Subscriber, the community ruleset is already built into your download. If you are a registered user (under the 30-day delay) you may also include this ruleset in your Snort installation to stay current. The authors of the rules in the community ruleset are listed in the AUTHORS file inside the tarball.
