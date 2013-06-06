@@ -41,7 +41,7 @@ git clone git://github.com/vrtadmin/snort-faq.git
 
 [How can I find a user group in my area?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/How-can-I-find-a-user-group-in-my-area.md)
 
-[What if there isn't a local group?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/What-if-there-isn't-a-local-group)
+[What if there isn't a local group?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/What-if-there-isn't-a-local-group.md)
 
 ### Rules ###
 
