@@ -1,0 +1,1 @@
+When contributing code or bug fixes for the Snort Engine, the GPL applies.

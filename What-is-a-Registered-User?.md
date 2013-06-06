@@ -1,0 +1,1 @@
+A registered user refers to someone who has completed the free registration process on www.snort.org. These users receive access to extra features of the site as well as access to download VRT Rule updates.

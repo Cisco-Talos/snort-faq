@@ -1,0 +1,1 @@
+Sourcefire is happy to help you establish a new group in your area. Send an e-mail to [snort_groups@sourcefire.com](snort_groups@sourcefire.com) to learn how to get started.

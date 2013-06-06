@@ -1,0 +1,1 @@
+The term open source typically refers to a program whose source code is released for use or modification by the community. Developers are free to download and make changes to the code as they please and create their own personalized product.

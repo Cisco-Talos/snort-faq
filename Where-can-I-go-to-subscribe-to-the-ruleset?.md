@@ -1,0 +1,1 @@
+You may go [here](http://www.snort.org/store) to purchase a Sourcefire VRT subscription.

@@ -1,0 +1,2 @@
+The Sourcefire VRT Certified Rules License Agreement enables registered end-users to freely download and use rules that have been certified by the Sourcefire VRT while restricting commercial redistribution.
+View the complete [Sourcefire VRT Certified Rules License Agreement](http://www.snort.org/vrt/rules/vrt_license).

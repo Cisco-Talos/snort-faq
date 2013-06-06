@@ -1,0 +1,1 @@
+When you contribute a new rule for Snort, your rule  will be included inside the Community Ruleset. Rules submitted to the Community Ruleset will be covered by the GPL.  The Community Ruleset is also included in the VRT Certified Subscriber ruleset, and exclusions have been made in the VRT License to account for your submission.

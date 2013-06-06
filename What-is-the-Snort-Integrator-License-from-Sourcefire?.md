@@ -1,0 +1,1 @@
+The Snort Integrator License from Sourcefire is a fee-based license that enables Snort Integrators to distribute VRT Certified Rules with their commercial offerings. If you are interested in an integrator license, please contact Sourcefire at [snort-license@sourcefire.com](snort-license@sourcefire.com).
