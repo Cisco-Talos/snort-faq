@@ -17,3 +17,5 @@
 [What is the role of the Sourcefire Vulnerability Research Team (VRT)](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-VRT's-Role.md)
 
 [How do I submit questions about Snort?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Where-do-I-submit-questions-about-Snort.md)
+
+[How do I ask a good question on the Snort list?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/How-do-I-submit-a-good-question.md)

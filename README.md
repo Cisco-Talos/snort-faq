@@ -27,6 +27,8 @@ git clone git://github.com/vrtadmin/snort-faq.git
 
 [How do I submit questions about Snort?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Where-do-I-submit-questions-about-Snort.md)
 
+[How do I ask a good question on the Snort list?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/How-do-I-submit-a-good-question.md)
+
 ### Snort.org ###
 
 [What is a registered user?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/What-is-a-Registered-User.md)
