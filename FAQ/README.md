@@ -14,7 +14,7 @@
 
 [What is a Snort Integrator?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-a-Snort-Integrator.md)
 
-[What is the role of the Sourcefire Vulnerability Research Team (VRT)](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-VRT's-Role.md)
+[What is the role of the Sourcefire Vulnerability Research Team (VRT)?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-role-of-the-VRT.md)
 
 [What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-mailing-list-nettiquete.md)
 
