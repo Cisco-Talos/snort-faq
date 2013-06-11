@@ -9,7 +9,7 @@ These are not hard and fast rules but they will help you to get responses to you
 
 3. If you want to start a new topic, do not hijack someone else's thread by replying to a message in that thread and changing the subject line. Start your new topic by writing a completely new message to the list or group. We understand that there may be topic drift from time to time. In those cases, an appropraite change of the subject line is ok as long as things do not get too far afield.
 
-4. When replying to someone's thread, you may reply to them in private but in general you should also reply to the list or group so that others can also benefit from your post. There is no reason for multiple people to have to ask the same questions you ask. Getting multiple answers all saying pretty much the same thing is a benefit, though.
+4. When replying to someone's thread, it is preferred that you keep the traffic on-list. Replying to the list helps others that can also benefit from your post. There is no reason for multiple people to have to ask the same questions you ask. Getting multiple answers all saying pretty much the same thing is a benefit, though.
 
 5. It is in everyone's best interests to keep as much list or group traffic on the list or in the group so that everyone can benefit. It is all too easy to make a mistake and lead someone astray whereas posting in public will allow others to see possible mistakes or even to offer additional help or clarification on the subject at hand.
 
