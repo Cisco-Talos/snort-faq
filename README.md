@@ -25,11 +25,15 @@ git clone git://github.com/vrtadmin/snort-faq.git
 
 [What is the role of the Sourcefire Vulnerability Research Team (VRT)?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-role-of-the-VRT.md)
 
-[What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-mailing-list-nettiquete.md)
+[I'm not receiving alerts in Snort](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-not-receiving-alerts-in-Snort.md)
 
-[How do I submit questions about Snort?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Where-do-I-submit-questions-about-Snort.md)
+### Lists ###
 
-[How do I ask a good question on the Snort list?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/How-do-I-submit-a-good-question.md)
+[What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/What-is-the-mailing-list-nettiquete.md)
+
+[How do I submit questions about Snort?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/Where-do-I-submit-questions-about-Snort.md)
+
+[How do I ask a good question on the Snort list?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/How-do-I-submit-a-good-question.md)
 
 ### Snort.org ###
 
