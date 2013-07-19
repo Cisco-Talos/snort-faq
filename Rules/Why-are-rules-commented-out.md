@@ -34,4 +34,4 @@ The last state is "in no policies".  This means that we insist that you look thr
 
 The way we make the decision about what is "on" or "off" by default when you aren't using the policies, is, if it's in balanced, it's on by default, it's it not in balanced, it's off by default.  There are a ton of exceptions to these rules, but this is the general rule of thumb for the default states.
 
-The "alert" and "drop" determination is based upon false positive rate, alert rate and a host of other factors, it's rule independant.
+The "alert" and "drop" determination is based upon false positive rate, alert rate and a host of other factors, it's rule independent.
