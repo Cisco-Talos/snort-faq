@@ -1,6 +1,8 @@
 You'll notice one of two conditions:
 `Warning: flowbits key 'http.rtf' is set but not ever checked.`
+
 or
+
 `Warning: flowbits key 'http.rtf' is checked but not ever set.`
 
 I'll break these warnings down and explain them, but first allow me to explain what a flowbit is for those that may not know.
@@ -15,6 +17,7 @@ Let me explain the two "warning" messages above.
 First, the group name of the flowbit that has the "problem" is "`http.rtf`".  In the VRT, we have a naming convention that we use for flowbits, and this name above tells me that this is an "RTF" document being downloaded over HTTP.  In other words, the way the rules are going to be written means that someone on your network has requested an "rtf" document.
 
 `Warning: flowbits key 'http.rtf' is set but not ever checked.`
+
 The above warning means that there is one rule that uses the syntax: "`flowbits:set,http.rtf`", but the rule that "checks" the flowbit isn't turned on.  We are using the condition of the first rule that "sets" the flowbit to use later in other rules.  Let me give you an example rule:
 
 `alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"WEB-MISC rtf download attempt"; flow:to_server,established; content:".rtf"; http_uri; flowbits:set,http.rtf;)`

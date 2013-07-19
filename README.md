@@ -75,7 +75,7 @@ git clone git://github.com/vrtadmin/snort-faq.git
 
 [How are rules distributed?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/How-are-rules-distributed.md)
 
-[Resolving Flowbit Dependancies](https://github.com/vrtadmin/snort-faq/blog/master/Rules/Resolving-flowbit-dependancies.md)
+[Resolving Flowbit Dependancies](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Resolving-flowbit-dependancies.md)
 
 ### Sourcefire VRT Subscription ###
 
