@@ -17,3 +17,5 @@
 [What is a user-defined rule?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-is-a-user-defined-rule.md)
 
 [How are rules distributed?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/How-are-rules-distributed.md)
+
+[Why are rules disabled?](https://github.com/vrtadmin/snort-faq/blog/master/Rules/Why-are-rules-commented-out.md)
