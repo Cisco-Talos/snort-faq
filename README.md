@@ -69,6 +69,9 @@ git clone git://github.com/vrtadmin/snort-faq.git
 
 [What is a user-defined rule?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-is-a-user-defined-rule.md)
 
+[Why are rules commented out by default?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Why-are-rules-commented-out.md)
+
+
 [How are rules distributed?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/How-are-rules-distributed.md)
 
 ### Sourcefire VRT Subscription ###
