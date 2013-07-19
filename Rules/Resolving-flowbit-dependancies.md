@@ -1,4 +1,5 @@
 You'll notice one of two conditions:
+
 `Warning: flowbits key 'http.rtf' is set but not ever checked.`
 
 or
@@ -8,8 +9,9 @@ or
 I'll break these warnings down and explain them, but first allow me to explain what a flowbit is for those that may not know.
 
 The manual states the following:
-	"The flowbits keyword is used in conjunction with conversation tracking from the Stream preprocessor. It allows rules to track states during a transport protocol session. The flowbits option is most useful for TCP sessions, as it allows rules to generically track the state of an application protocol.
-	There are eight keywords associated with flowbits. Most of the options need a user-defined name for the specific state that is being checked. This string should be limited to any alphanumeric string including periods, dashes, and underscores. The keywords set and toggle take an optional argument which specifies the group to which the keywords will belong. When no group name is specified the flowbits will belong to a default group. All the flowbits in a particular group (with an exception of default group) are mutually exclusive. A particular flow cannot belong to more than one group."
+>"The flowbits keyword is used in conjunction with conversation tracking from the Stream preprocessor. It allows rules to track states during a transport protocol session. The flowbits option is most useful for TCP sessions, as it allows rules to generically track the state of an application protocol.
+>	There are eight keywords associated with flowbits. Most of the options need a user-defined name for the specific state that is being checked. This string should be limited to any alphanumeric string including periods, dashes, and underscores. The keywords set and toggle take an optional argument which specifies the group to which the keywords will belong. When no group name is specified the flowbits will belong to a default group. All the flowbits in a particular group (with an exception of default group) are mutually exclusive. A particular flow cannot belong to more than one group."
+
 In other words, flowbits allow you to set and track the state of a flow in between one or more rules. 
 
 Let me explain the two "warning" messages above.
