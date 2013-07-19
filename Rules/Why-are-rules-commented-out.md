@@ -5,6 +5,7 @@ There are four states that we place rules in when we create them, three of the s
 	- Either in "alert" or "drop"
 - Security over Connectivity (Security)
 	- Either in "alert" or "drop"
+
 The last state is "in no policies".
 
 We have some general rules of thumb for these, as outlined below.  These are flexible in meaning as well, and are simply guidelines.
