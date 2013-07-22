@@ -4,7 +4,7 @@ This is the official Snort FAQ/Wiki repository.  It was moved from the Snort.org
 
 To checkout all the files:
 
-git clone git://github.com/vrtadmin/snort-faq.git
+`git clone git://github.com/vrtadmin/snort-faq.git`
 
 
 ### FAQ Pages ###
