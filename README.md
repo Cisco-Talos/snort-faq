@@ -27,7 +27,7 @@ To checkout all the files:
 
 [I'm not receiving alerts in Snort](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-not-receiving-alerts-in-Snort.md)
 
-[I'm receiving an error regarding IP Datagram length, what is the problem?](https://github.com/vrtadming/snort-faq/blob/master/FAQ/Im-Receiving-a-IP-dgm-len-alert.md)
+[I'm receiving an error regarding IP Datagram length, what is the problem?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-Receiving-a-IP-dgm-len-alert.md)
 
 ### Lists ###
 
