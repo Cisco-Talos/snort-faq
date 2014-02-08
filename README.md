@@ -201,8 +201,6 @@ All the READMEs from the Snort tarball are uploaded here for simple indexing and
 
 [README.stream5](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.stream5)
 
-[README.swp](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.swp)
-
 [README.tag](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.tag)
 
 [README.thresholding](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.thresholding)
