@@ -1,9 +1,9 @@
 Snort Version 2.9.6.0
 
-by Martin Roesch and The Snort Team (http://www.snort.org/team.html)
+by Martin Roesch and The Snort Team [http://www.snort.org/snort/snort-team/](http://www.snort.org/snort/snort-team/)
 
 Distribution Site:
-http://www.snort.org
+[http://www.snort.org](http://www.snort.org)
 
 ******************************************************************************
 COPYRIGHT
@@ -50,7 +50,7 @@ like tcpdump(1), a packet logger (useful for network traffic
 debugging, etc), or as a full blown network intrusion detection and prevention
 system.
 
-Please read the snort_manual.pdf file that should be included with this 
+Please read the [snort manual](http://manual.snort.org) file that should be included with this 
 distribution for full documentation on the program as well as a guide to 
 getting started.
 
@@ -93,16 +93,10 @@ You can use the -F switch to read your BPF filters in from a file.
 [*][RULES]:
       
 -------------------------------------------------------------------------
-NOTE: The "official" rules document these days is available at:
-
-http://www.snort.org/docs/writing_rules/
-
-and is also usually distributed as snort_manual.pdf in the distro.  If
-you don't have this file in your distribution of Snort, you can get it from
-www.snort.org.
+NOTE: The "official" rules document these days is available in the snort_manual.pdf in the distro.  If
+you don't have this file in your distribution of Snort, you can get it from [here](www.snort.org/docs).
 -------------------------------------------------------------------------
 
 Please read the USAGE file or the snort_manual.pdf for more info!
 
 ******************************************************************************
-/* $Id$ */
