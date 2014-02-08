@@ -48,28 +48,28 @@ getting started.
 
 ******************************************************************************
 
-[*][USAGE]
+** USAGE
 
 Command line: 
 
-	snort -[options] <filters>
+	`snort -[options] <filters>`
 
 Options:
-    The full list of options supported is displayed using the option --help.
+The full list of options supported is displayed using the option --help.
 
-[*][FILTERS]:
+** FILTERS:
 
-     The "filters" are standard BPF style filters as seen in tcpdump.  Look
+The "filters" are standard BPF style filters as seen in tcpdump.  Look
 at the man page for snort for docs on how to use it properly.  In general,
 you can give it a host, net or protocol to filter on and some logical statements
 to tie it together and get the specific traffic you're interested in.  For 
 example:
 
-[zeus ~]# ./snort -h 192.168.1.0/24 -d -v host 192.168.1.1
+`[zeus ~]# ./snort -h 192.168.1.0/24 -d -v host 192.168.1.1`
 
 records the traffic to and from host 192.168.1.1.
 
-[zeus ~]# ./snort -h 192.168.1.0/24 -d -v net 192.168.1 and not host 192.168.1.1
+`[zeus ~]# ./snort -h 192.168.1.0/24 -d -v net 192.168.1 and not host 192.168.1.1`
 
 records all traffic on the 192.168.1.0/24 class C subnet, but not traffic 
 to/from 192.168.1.1.  Notice that the command line data specified after the
@@ -81,11 +81,10 @@ Mail me if you have trouble with it.
 You can use the -F switch to read your BPF filters in from a file.  
 
 
-[*][RULES]:
+** RULES:
       
 -------------------------------------------------------------------------
-NOTE: The "official" rules document these days is available in the snort_manual.pdf in the distro.  If
-you don't have this file in your distribution of Snort, you can get it from [here](www.snort.org/docs).
+NOTE: The "official" rules document these days is available in the snort_manual.pdf in the distro.  If you don't have this file in your distribution of Snort, you can get it from [here](www.snort.org/docs).
 -------------------------------------------------------------------------
 
 Please read the USAGE file or the snort_manual.pdf for more info!
