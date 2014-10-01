@@ -8,13 +8,13 @@
 
 [Where can I download Snort?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Where-can-I-download-Snort.md)
 
-[What is the relationship between Snort and Sourcefire?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-relationship-between-Snort-and-Sourcefire.md)
+[What is the relationship between Snort and Cisco?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-relationship-between-Snort-and-Cisco.md)
 
-[Does Sourcefire sell Snort?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Does-Sourcefire-sell-Snort.md)
+[Does Cisco sell Snort?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Does-Cisco-sell-Snort.md)
 
 [What is a Snort Integrator?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-a-Snort-Integrator.md)
 
-[What is the role of the Sourcefire Vulnerability Research Team (VRT)?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-role-of-the-VRT.md)
+[What is the role of Talos?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/What-is-the-role-of-Talos.md)
 
 [I'm not receiving alerts in Snort](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-not-receiving-alerts-in-Snort.md)
 

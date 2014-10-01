@@ -1,0 +1,1 @@
+**No**, Subscribers receive Snort Subscriber Rule Set updates immediately as they are shipped.  Registered users receive the *same exact* ruleset, however, no new content will be included that was produced during the 30 day window.  Updated content outside of the 30 day window will be included.  

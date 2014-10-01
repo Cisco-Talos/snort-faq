@@ -2,9 +2,9 @@
 
 [What is the GNU GPL?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-GNU-GPL.md)
 
-[What is the Sourcefire VRT Certified Rules License Agreement?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-Sourcefire-VRT-Certified-Rules-License-Agreement.md)
+[What is the Snort Subscriber Rule Set License Agreement?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-Snort-Subscriber-Rule-Set-License.md)
 
-[What is the Snort Integrator License from Sourcefire?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-Snort-Integrator-License-from-Sourcefire.md)
+[What is the Snort Integrator License?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-Snort-Integrator-License.md)
 
 [How is the Snort software licensed?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/How-is-the-Snort-Engine-Licensed.md)
 

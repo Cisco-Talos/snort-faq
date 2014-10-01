@@ -1,1 +1,0 @@
-To help foster this sense of community and provide a platform for users to share their ideas and experiences, local Snort User Groups have been formed throughout the world. You can go to [http://www.snort.org/community/user-groups](http://www.snort.org/community/user-groups) to see if there is a group in your area or anyone interested in starting one.

@@ -1,1 +1,1 @@
-Registration is not mandatory although unregistered users will not have access to timely Sourcefire VRT Rule updates. Unregistered users will still have full access to the Snort source code and community ruleset.
+Registration is not mandatory although unregistered users will not have access to timely Snort Subscriber Rule Set updates. Unregistered users will still have full access to the Snort source code and community ruleset.

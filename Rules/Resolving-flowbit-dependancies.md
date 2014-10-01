@@ -17,7 +17,7 @@ In other words, flowbits allow you to set and track the state of a flow in betwe
 
 Let me explain the two "warning" messages above.
 
-First, the group name of the flowbit that has the "problem" is "`http.rtf`".  In the VRT, we have a naming convention that we use for flowbits, and this name above tells me that this is an "RTF" document being downloaded over HTTP.  In other words, the way the rules are going to be written means that someone on your network has requested an "rtf" document.
+First, the group name of the flowbit that has the "problem" is "`http.rtf`".  In Talos, we have a naming convention that we use for flowbits, and this name above tells me that this is an "RTF" document being downloaded over HTTP.  In other words, the way the rules are going to be written means that someone on your network has requested an "rtf" document.
 
 `Warning: flowbits key 'http.rtf' is set but not ever checked.`
 

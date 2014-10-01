@@ -12,7 +12,7 @@
 
 [What are Community Rules?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-are-community-rules.md)
 
-[What are Sourcefire VRT Certified Rules?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-are-Sourcefire-VRT-Certified-Rules.md)
+[What is the Snort Subscriber Rule Set?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-is-the-Snort-Subscriber-Rule-Set.md)
 
 [What is a user-defined rule?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-is-a-user-defined-rule.md)
 

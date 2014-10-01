@@ -1,1 +1,1 @@
-Your feedback on the web site as well Snort in general is very important to Sourcefire. Please send any feedback on the Snort.org website to [snort-site@sourcefire.com](snort-site@sourcefire.com).
+Your feedback on the web site as well Snort in general is very important to us. Please send any feedback on the Snort.org website to [snort-site@cisco.com](snort-site@cisco.com).

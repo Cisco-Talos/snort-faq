@@ -1,0 +1,1 @@
+[The Snort Subscriber Rule Set](https://www.snort.org/downloads/#rule-downloads) refer to rules that have been developed, tested and approved by the Talos Security Intelligence and Research Team (Talos).  The Snort Subscriber Ruleset released after March 7th, 2005 are governed by the [Snort Subscriber Rule Set License Agreement](https://www.snort.org/vrt_license).

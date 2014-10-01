@@ -1,0 +1,1 @@
+The Snort Integrator License is a fee-based license that enables Snort Integrators to distribute the Snort Subscriber Rule Set with their commercial offerings. If you are interested in an integrator license, please contact us at [snort-license@cisco.com](snort-license@cisco.com).
