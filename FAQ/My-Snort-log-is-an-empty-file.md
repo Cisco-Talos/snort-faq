@@ -4,7 +4,7 @@ If a log in your Snort-log directory is an empty file like this:
 -rw-------. 1 root  root     0 Sep 20 11:30 tcpdump.log.1411187404
 
 
-,the cause of this problem is the "$NO_PACKET_LOG" option (-N)  in Snort's startup script at /etc/init.d/snort.
+One of the causes of this problem may be the "$NO_PACKET_LOG" option (-N)  in Snort's startup script at /etc/init.d/snort.
 Please delete it from this line:
 
 ------------------

@@ -18,6 +18,8 @@
 
 [I'm not receiving alerts in Snort](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-not-receiving-alerts-in-Snort.md)
 
-[Is Snort going to incorporate <output plugin> in the near future?](https://github.com/vrtadming/snort-faq/blob/master/FAQ/Snort-Output-Plugins.md)
+[Is Snort going to incorporate <output plugin> in the near future?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Snort-Output-Plugins.md)
 
-[I'm receiving an error regarding IP Datagram length, what is the problem?](https://github.com/vrtadming/snort-faq/blob/master/FAQ/Im-Receiving-a-IP-dgm-len-alert.md)
+[I'm receiving an error regarding IP Datagram length, what is the problem?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-Receiving-a-IP-dgm-len-alert.md)
+
+[My Snort log is an empty file, what could be the cause?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/My-Snort-log-is-an-empty-file.md)

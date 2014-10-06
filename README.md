@@ -29,6 +29,8 @@ To checkout all the files:
 
 [I'm receiving an error regarding IP Datagram length, what is the problem?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-Receiving-a-IP-dgm-len-alert.md)
 
+[My Snort log is an empty file, what could be the cause?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/My-Snort-log-is-an-empty-file.md)
+
 ### Lists ###
 
 [What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/What-is-the-mailing-list-nettiquete.md)
