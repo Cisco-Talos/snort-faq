@@ -9,9 +9,7 @@ One of the causes of this problem may be the "$NO_PACKET_LOG" option (-N)  in Sn
 Please delete it from this line:
 
 ------------------
-> 	daemon --pidfile=$PID_FILE $SNORTD $ALERTMODE $LINK_LAYER $DUMP_APP -e -D $PRINT_INTERFACE $INTERFACE -u $USER 
-
-> 	-g $GROUP $CONF -l $LOGDIR $PASS_FIRST $BPFFILE $BPF && success || failure
+> 	daemon --pidfile=$PID_FILE $SNORTD $ALERTMODE $LINK_LAYER $DUMP_APP -e -D $PRINT_INTERFACE $INTERFACE -u $USER -g $GROUP $CONF -l $LOGDIR $PASS_FIRST $BPFFILE $BPF && success || failure
 ------------------
 
 
