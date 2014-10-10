@@ -31,6 +31,8 @@ To checkout all the files:
 
 [My Snort log is an empty file, what could be the cause?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/My-Snort-log-is-an-empty-file.md)
 
+[Can I have help with my homework?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Can-I-have-help-with-my-homework.md)
+
 ### Lists ###
 
 [What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/What-is-the-mailing-list-nettiquete.md)
