@@ -23,3 +23,5 @@
 [I'm receiving an error regarding IP Datagram length, what is the problem?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Im-Receiving-a-IP-dgm-len-alert.md)
 
 [My Snort log is an empty file, what could be the cause?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/My-Snort-log-is-an-empty-file.md)
+
+[Can I have help with my homework?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Can-I-have-help-with-my-homework.md)
