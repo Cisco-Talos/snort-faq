@@ -77,7 +77,11 @@ TCP Normalizations
 TCP normalizations are enabled with:
 
     preprocessor normalize_tcp: \
+        [block], [rsv], [pad], \
+        [req_urg], [req_pay], [req_urp], \
         [ips], [urp], [trim], \
+        [trim_syn], [trim_rst], \
+        [trim_win], [trim_mss], \
         [ecn <ecn_type>], \
         [opts [allow <allowed_opt>+]]
 
@@ -94,36 +98,35 @@ TCP normalizations are enabled with:
     <md5> ::= { 19 }
     <num> ::= (3..255)
 
-Base normalizations enabled with "preprocessor normalize_tcp" include:
+Normalizations include:
 
-* Clear the reserved bits in the TCP header.
+* block:  allow packet drops during TCP normalization.
 
-* Clear the urgent pointer if the urgent flag is not set.
+* rsv:  clear the reserved bits in the TCP header.
 
-* Clear the urgent pointer and the urgent flag if there is no payload.
+* pad:  clear any option padding bytes.
 
-* Set the urgent pointer to the payload length if it is greater than the
-  payload length.
+* req_urg:  clear the urgent pointer if the urgent flag is not set.
 
-* Clear the urgent flag if the urgent pointer is not set.
+* req_pay:  clear the urgent pointer and the urgent flag if there is no payload.
 
-* Clear any option padding bytes.
-
-Optional normalizations include:
+* req_urp:  clear the urgent flag if the urgent pointer is not set.
 
 * ips:  ensure consistency in retransmitted data (also forces reassembly policy
   to "first").  Any segments that can't be properly reassembled will be dropped.
 
-* urp - urgent pointer:  don't adjust the urgent pointer if it is greater than
+* urp:  set the urgent pointer to the payload length if it is greater than the
   payload length.
 
-* trim:  remove data on SYN.
+* trim_syn:  remove data on SYN.
 
-* trim:  remove any data from RST packet.
+* trim_rst:  remove any data from RST packet.
 
-* trim:  trim data to window.
+* trim_win:  trim data to window.
 
-* trim:  trim data to MSS.
+* trim_mss:  trim data to MSS.
+
+* trim:  enable all of the above trim options.
 
 * ecn packet:  clear ECN flags on a per packet basis (regardless of
   negotiation).

@@ -1,24 +1,11 @@
 # File IPS
 
-##########################################
-# THIS CODE IS STILL EXPERIMENTAL!
-# DO NOT USE IN PRODUCTION ENVIRONMENTS.
-# Please send any issues to the Snort team
-##########################################
-
 ## Synopsis
 
 This README documents the File Type for IPS rules set of keywords. These
 keywords provide rule writers the ability to leverage Snort's file
 identification capability in IPS rules. These new keywords are the indented
 replacement for existing 'flowbits' rules that solve the same problem.
-
-## Compiling Snort
-
-To use the new file keywords, users must compile Snort with the  configure flag
-`--enable-file-inspect`.
-
-    ./configure  --enable-file-inspect
 
 ## Configuration
 
@@ -27,6 +14,11 @@ These rules perform the magic identification of files seen on-the-wire. It
 is recommended that you configure Snort to use the prepackaged file magic 
 rules. See 'README.file' to learn more about file identification rules.
 
+To identify files transferred through FTP, TCP normalization with ips must be 
+enabled:
+
+    preprocessor normalize_tcp:ips
+    
 Note that file type detection will be enabled automatically when Snort parses a
 rule using either of the new keywords. There is no need to specify `config
 file:` of `preprocessor file` in the Snort configurations.
@@ -59,6 +51,10 @@ several file types of varying versions.
 
     alert tcp any any -> any any ( msg:"PDF version 1.6"; file_type:PDF,1.6; )
 
+3. Single file type with multiple versions
+
+    alert tcp any any -> any any ( msg:"PDF version 1.6"; file_type:PDF,1.6,1.7; )
+
 3. Several file types
 
     alert tcp any any -> any any ( msg:"Random documents"; file_type:PDF|DOC; )
@@ -66,7 +62,7 @@ several file types of varying versions.
 
 4. Multiple file types and some versions
 
-    alert tcp any any -> any any ( msg:"Only PDF versions (1.6,1.7)"; file_type:PDF,1.6|PDF,1.7; )
+    alert tcp any any -> any any ( msg:"Multiple file types and version"; file_type:PDF,1.6,1.7|DOC,10,11,12; )
 
 ## file_group
 

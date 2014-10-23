@@ -60,6 +60,7 @@ Otherwise, response destination MAC address is derived from packet.
 Example:
     config response: device eth0 dst_mac 00:06:76:DD:5F:E3 attempts 2 
 
+
 FLEXRESP CHANGES
 ================
 
@@ -92,8 +93,6 @@ Flexresp and flexresp2 are replaced with flexresp3.
         rst_snd | rst_rcv | rst_all | \
         reset_source | reset_dest | reset_both | icmp_net | \
         icmp_host | icmp_port | icmp_all
-
-See README.flexresp3 for more.
 
 
 REACT CHANGES
