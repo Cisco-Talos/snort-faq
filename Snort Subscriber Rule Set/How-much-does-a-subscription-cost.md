@@ -4,7 +4,6 @@ The pricing for the Snort Subscriber Rule Set is based on an annual subscription
         <tr>
           <th>Subscription Type </th>
           <th><div align="center">Pricing</div></th>
-          <th><div align="center">Sensor(s)</div></th>
         </tr>
         <tr>
           <td style="background-color:#FFF">Personal (available only online) </td>
