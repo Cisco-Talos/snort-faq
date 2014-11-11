@@ -1,3 +1,5 @@
+## I'm receiving an error regarding IP Datagram length, what is the problem? ##
+
 If you are receiving an error message that looks like:
 
 `(snort_decoder) WARNING: IP dgm len > captured len`

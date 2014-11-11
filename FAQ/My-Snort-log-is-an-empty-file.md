@@ -1,3 +1,5 @@
+## My Snort log is an empty file, what could be the cause? ##
+
 If a log in your Snort-log directory is an empty file like this:
 
 	-rw-------. 1 root  root     0 Sep 20 11:30 merged.log.1411187404
