@@ -1,3 +1,1 @@
-## Does Cisco sell Snort? ##
-
 While Cisco does offer a commercial version of the Snort technology, we do not sell Snort. Cisco embraces the open source model and is committed to the GPL. Cisco leverages the Snort detection engine and Snort Subscriber Rule Set as the foundation for the Cisco Next Generation IPS and Next Generation Firewall, adding an easy-to-use interface, optimized hardware, powerful data analysis and reporting, policy management and administration, a full suite of product services, and 24x7 support. All enhancements made to the Snort technology for Cisco's commercial offerings are released back to the open source community.
