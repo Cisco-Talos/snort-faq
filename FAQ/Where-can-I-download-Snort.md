@@ -1,3 +1,1 @@
-## Where can I download Snort? ##
-
-You can download the latest Snort releases [here](http://www.snort.org/snort-downloads/). Snort rules can be downloaded [here](http://www.snort.org/snort-rules).
+You can download the latest [Snort Releases](https://www.snort.org/downloads) and [Snort Rules](https://www.snort.org/downloads/#rule-downloads) on snort.org.
