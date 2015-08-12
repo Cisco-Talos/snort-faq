@@ -33,6 +33,8 @@ To checkout all the files:
 
 [Can I have help with my homework?](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Can-I-have-help-with-my-homework.md)
 
+[What is the list of Snort Supported OSes](https://snort.org/documents/snort-supported-oses)
+
 ### Lists ###
 
 [What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/What-is-the-mailing-list-nettiquete.md)
