@@ -210,3 +210,5 @@ All the READMEs from the Snort tarball are uploaded here for simple indexing and
 [README.unified2](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.unified2)
 
 [README.variables](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.variables)
+
+[README.session](https://github.com/vrtadmin/snort-faq/blob/master/docs/README.session)

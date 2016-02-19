@@ -1,0 +1,93 @@
+Overview
+========
+The Session preprocessor is a global stream session management module
+for Snort.  It is derived from the session management functions that
+were part of the Stream5 preprocessor.
+
+Since Session implements part of the functionality and API that was
+previously in Stream5 it cannot be used with Stream5 but must be
+used in conjunction with the new Stream preprocessor.  Similarly, 
+due to the API changes, the other preprocessors in Snort 2.9.7 work
+only with the new Session and Stream preprocessers.
+
+Session API
+-----------
+Session provides an API to enable the creation and management of
+the session control block for a flow and the management of data
+and state that may be associated with that flow by service and
+application preprocessors (most of these functions were previously
+supported by the Stream5 API). These methods are called to identify
+sessions that may be ignored (large data transfers, etc), and 
+update the identifying information about the session (application
+protocol, direction, etc) that can later be used by rules.  
+API methods to enable preprocessors to register for dispatch for
+ports and services for which they should be called to process
+the packet have been added to the Session API. Session is required
+for the use of the 'flow' and 'flowbits' keywords.
+
+Functions provided by the Session API fall into the following
+general categories:
+    - Creation and management of the protocol specifc cache of
+      session control blocks
+    - Session Key management and session lookup
+    - Pruning of allocated sessions
+    - Expected flow session management
+    - Session HA management
+    - Session Application Id and application data management
+    - Port and Service registration
+
+Configuration
+=============
+Global Configuration
+--------------------
+The Session preprocessor now registers for the 'stream5_global' configuration and these
+options are now global across snort and all policies.  Stream continues to use some of
+these to control its processing and now obtains the configured options via a Session API
+call.  If the Stream preprocessor is enabled, then Session must be configured, the 
+configuration options must be included in the snort configuration file before the Stream
+configuration options, and there may only be one 'stream5_global' defined.
+
+Global settings for the Session preprocessor:
+
+- Preprocessor name: stream5_global
+- Options:
+    track_tcp <yes|no>      - Track sessions for TCP.  The default is "yes".
+    max_tcp <number>        - Max concurrent sessions for TCP.  The default
+                              is "262144", maximum is "1048576", minimum is "2".
+    memcap <bytes>          - Memcap for TCP packet storage.  The default
+                              is "8388608" (8MB), maximum is "1073741824" (1GB),
+                              minimum is "32768" (32KB).
+    track_udp <yes|no>      - Track sessions for UDP.  The default is "yes".
+    max_udp <number>        - Max concurrent sessions for UDP.  The default
+                              is "131072", maximum is "1048576", minimum is "1".
+    track_icmp <yes|no>     - Track sessions for ICMP.  The default is "no".
+    max_icmp <number>       - Max concurrent sessions for ICMP.  The default
+                              is "65536", maximum is "1048576", minimum is "1".
+    flush_on_alert          - Backwards compatibility.  Flush a TCP stream
+                              when an alert is generated on that stream.  The
+                              default is set to off.
+    show_rebuilt_packets    - Print/display packet after rebuilt (for
+                              debugging).  The default is set to off.
+    prune_log_max <bytes>   - Print a message when a session terminates that
+                              was consuming more than the specified number of
+                              bytes.  The default is "1048576" (1MB), minimum
+                              can be either "0" (disabled) or if not disabled 
+			                  the minimum is "1024" and maximum is "1073741824".
+    disabled		        - This optional keyword is allowed with any policy
+			                  to avoid packet processing. This option disables
+			                  the preprocessor. When the preprocessor is disabled 
+			                  only the options memcap, max_tcp, max_udp and 
+			                  max_icmp are applied when specified with the 
+		                      configuration. The other options are parsed but 
+		                      not used. Any valid configuration may have 
+		                      "disabled" added to it.
+
+Example Configurations
+======================
+1) This example configuration sets a maximum number of TCP session control blocks to 8192 and
+   enables tracking of TCP and UPD sessions.  The number of UDP session control blocks will
+   be set to the compiled default. 
+
+preprocessor stream5_global: max_tcp 8192, track_tcp yes, \
+                            track_udp yes, track_icmp no
+
