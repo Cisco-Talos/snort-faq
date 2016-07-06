@@ -79,6 +79,8 @@ To checkout all the files:
 
 [Resolving Flowbit Dependancies](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Resolving-flowbit-dependancies.md)
 
+[What are the differences in the rule sets?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-are-the-differences-in-the-rulesets.md)
+
 ### Snort Subscriber Rule Set Subscription ###
 
 [What does having a Snort Subscriber Rule Set subscription entitle me to?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/What-does-the-Snort-Subscriber-Rule-Set-entitle-me-to.md)
