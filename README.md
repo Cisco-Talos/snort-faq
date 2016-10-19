@@ -55,6 +55,8 @@ To checkout all the files:
 
 [How can I provide feedback or suggestions for the site?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/How-can-I-provide-feedback-or-suggestions-for-the-site.md)
 
+[Abuse of Snort.org](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Abuse-of-Snort-org.md)
+
 ### Rules ###
 
 [What is a Snort rule?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-is-a-Snort-rule.md)
