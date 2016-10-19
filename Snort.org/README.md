@@ -9,3 +9,5 @@
 [Will my information be shared with any other parties or used for marketing?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/Will-my-information-be-shared-with-any-other-parties-or-used-for-marketing.md)
 
 [How can I provide feedback or suggestions for the site?](https://github.com/vrtadmin/snort-faq/blob/master/Snort.org/How-can-I-provide-feedback-or-suggestions-for-the-site.md)
+
+[Abuse of Snort.org](https://github.com/vrtadmin/snort-faq/blob/master/FAQ/Abuse-of-Snort-org.md)
