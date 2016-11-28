@@ -97,6 +97,8 @@ To checkout all the files:
 
 [Where do I go to subscribe to the Snort Subscriber Rule Set?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Where-can-I-go-to-subscribe-to-the-ruleset.md)
 
+[Shared Object Rules](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Snort-Shared-Object-Rules.md)
+
 ### Licensing ###
 
 [What is the GNU GPL?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-GNU-GPL.md)
