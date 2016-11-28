@@ -83,6 +83,8 @@ To checkout all the files:
 
 [What are the differences in the rule sets?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-are-the-differences-in-the-rulesets.md)
 
+[Shared Object Rules](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Snort-Shared-Object-Rules.md)
+
 ### Snort Subscriber Rule Set Subscription ###
 
 [What does having a Snort Subscriber Rule Set subscription entitle me to?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/What-does-the-Snort-Subscriber-Rule-Set-entitle-me-to.md)
@@ -96,8 +98,6 @@ To checkout all the files:
 [Can I use tools such as PulledPork to manage the subscription?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Can-I-use-tools-such-as-PulledPork-to-manage-the-subscription.md)
 
 [Where do I go to subscribe to the Snort Subscriber Rule Set?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Where-can-I-go-to-subscribe-to-the-ruleset.md)
-
-[Shared Object Rules](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Snort-Shared-Object-Rules.md)
 
 ### Licensing ###
 
