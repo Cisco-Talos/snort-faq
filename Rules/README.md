@@ -23,3 +23,5 @@
 [Resolving Flowbit Dependancies](https://github.com/vrtadmin/snort-faq/blog/master/Rules/Resolving-flowbit-dependancies.md)
 
 [What are the differences in the rulesets?](https://github.com/vrtadmin/snort-faq/blob/master/Rules/What-are-the-differences-in-the-rulesets.md)
+
+[Snort Shared Object Rules](https://github.com/vrtadmin/snort-faq/blob/master/Rules/Snort-Shared-Object-Rules.md)
