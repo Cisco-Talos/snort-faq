@@ -1,4 +1,4 @@
-There are four states that we place rules in when we create them, three of the states are assigned to policies.
+There are five states that we place rules in when we create them, four of the states are assigned to policies.
 - Connectivity over Security (Connectivity)
 	- Either in "alert" or "drop"
 - Balanced (Balanced)
@@ -30,6 +30,12 @@ We have some general rules of thumb for these, as outlined below.  These are fle
 	-  SQL Injection rules
 	-  Blacklist rules
 	-  App-detect rules
+	
+4. The fourth, max-detect, means "Maximum Detection".  Generally used for testing, and has very specific criteria.
+	- CVSS Score of 7.5 or greater
+	- Age of the vulnerability is 2005 or greater
+	- MALWARE-CNC Rules
+	- Exploit-Kit
 
 The last state is "in no policies".  This means that we insist that you look through these by product name or CVE in order to turn them on.  These may not have a fast content match, could be false positive prone, or the vulnerability it is covering is not in a very prevalent piece of software.  
 
