@@ -2,7 +2,7 @@ We consider abuse of Snort.org to be the following:
 
 * Excessive downloading
 
-> While we don't have any limitations on the amount of times you can download a Snort package or ruleset per day, we ask that you schedule your downloads for no more than once per hour.  (We also insist on the usage of [PulledPork](https://github.com/shirkdog/pulledpork), which, amongst its many features, checks the md5 of the file you are attempting to download, before it attempts to download the entire rule file.  This saves us a tremendous amount of bandwidth.)  If you are causing us problems by attempting to download the ruleset too much (for instance, once every minute, every five minutes, every ten minutes), you may wind up at our "Abuse" page.
+> While we don't have any limitations on the amount of times you can download a Snort package or ruleset per day, we ask that you schedule your downloads for no more than once per hour.  (We also insist on the usage of [PulledPork](https://github.com/shirkdog/pulledpork), which, amongst its many features, checks the md5 of the file you are attempting to download, before it attempts to download the entire rule file.  This saves us a tremendous amount of bandwidth.)  If you are causing us problems by attempting to download the ruleset too often (for instance, once every minute, every five minutes), you may wind up at our "Abuse" page.  If you suspect you are one of these people, (which is the majority of people that wind up on the abuse page), please double check your crontabs to ensure you are downloading no more than once an hour.
 
 * Use of a Shared Oinkcode
 
