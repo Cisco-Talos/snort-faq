@@ -1004,6 +1004,7 @@ Alerts
 HTTP Inspect used generator ID 119 and 120.  HTTP Inspect can generate the 
 following alerts under generator ID 119:
 
+```
 SID   Description
 ---   -----------
 1     ASCII encoding
@@ -1037,10 +1038,10 @@ SID   Description
 30    both true_client_ip and XFF hdrs present
 31    unknown method
 32    simple request (HTTP/0.9)
-
+```
 
 The following alert is generated with generator ID 120:
-
+```
 SID   Description
 ---   -----------
 1     Anomalous HTTP server on undefined HTTP port
@@ -1060,4 +1061,4 @@ SID   Description
 15    PDF file with unsupported compression type
 16    PDF file with cascaded FlateDecode filters
 17    PDF file parsing error
-
+```
