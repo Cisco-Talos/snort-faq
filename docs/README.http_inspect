@@ -144,34 +144,35 @@ Users can configure HttpInspect by using pre-defined HTTP server
 profiles.  Profiles must be specified as the first server option and
 cannot be combined with any other options except:
 
+
 ```
 * ports
 * iis_unicode_map
-  - allow_proxy_use
-  - server_flow_depth 
-  - client_flow_depth 
-  - post_depth
-  - no_alerts
-  - inspect_uri_only
-  - oversize_dir_length
-  - normalize_headers
-  - normalize_cookies
-  - normalize_utf
-  - max_header_length
-  - max_headers
-  - max_spaces
-  - enable_cookie
-  - extended_response_inspection
-  - inspect_gzip
-  - normalize_javascript
-  - max_javascript_whitespaces
-  - enable_xff
-  - unlimited_decompress
-  - http_methods
-  - log_uri
-  - log_hostname
-  - decompress_swf
-  - decompress_pdf
+* allow_proxy_use
+* server_flow_depth 
+* client_flow_depth 
+* post_depth
+* no_alerts
+* inspect_uri_only
+* oversize_dir_length
+* normalize_headers
+* normalize_cookies
+* normalize_utf
+* max_header_length
+* max_headers
+* max_spaces
+* enable_cookie
+* extended_response_inspection
+* inspect_gzip
+* normalize_javascript
+* max_javascript_whitespaces
+* enable_xff
+* unlimited_decompress
+* http_methods
+* log_uri
+* log_hostname
+* decompress_swf
+* decompress_pdf
 ```
 
 These options must be specified after the '`profile`' option.
@@ -181,22 +182,22 @@ Example:
 `preprocessor http_inspect_server: server 1.1.1.1 profile all ports { 80 3128 }`
  
 There are five profiles available:
-  - all: The "all" profile is meant to normalize the URI using most of the
+  - `all`: The "all" profile is meant to normalize the URI using most of the
   	     common tricks available.  We alert on the more serious forms of 
 	     evasions.  This is a great profile for detecting all the types of	
 	     attacks regardless of the HTTP server.
 
-  - `apache`: The "apache" profile is used for apache web servers.  This differs
+  `apache`: The "apache" profile is used for apache web servers.  This differs
 	     from the 'iis' profile by only accepting utf-8 standard
 	     unicode encoding and not accepting backslashes as
 	     legitimate slashes, like IIS does.  Apache also accepts 
 	     tabs as whitespace 
 
-  - `iis`: The "iis" profile mimics IIS servers.  So that means we use IIS
+  `iis`: The "iis" profile mimics IIS servers.  So that means we use IIS
   	     unicode codemaps for each server, %u encoding, bare-byte encoding, 
          backslashes, etc.
 
-  - `iis4_0, iis5_0`: In IIS 4.0 and 5.0, there was a double decoding 
+  `iis4_0, iis5_0`: In IIS 4.0 and 5.0, there was a double decoding 
         vulnerability.  These two profiles are identical to IIS, except
         they will alert by default if a URL has a double encoding.  Double
         decode is not supported in IIS 5.1 and beyond, so it's disabled in 
@@ -301,6 +302,7 @@ This option will enable decompression of the compressed portions of PDF files en
 When enabled, the preprocessor will examine the response body for the '%PDF-' file signature. PDF files are then parsed, locating PDF 'streams' with a single '`/FlateDecode`' filter.  These streams are decompressed in-place, replacing the compressed content.
 The '`decompress_depth`', '`compress_depth`', and '`unlimited_decompress`' are optionally used to  place limits on the decompression process.  The semantics for PDF files are similar to the gzip decompression process.
 During the file parsing/decompression process, the preprocessor may generate several alerts:
+
 ```
     120:14 - Deflate decompression error
     120:15 - Located a 'stream' with an unsupported compression ('/Filter') algorithm
@@ -320,6 +322,7 @@ The obfuscated data within the javascript functions such as unescape, `String.fr
 `decodeURIComponent` will be normalized. The different encodings handled within the `unescape`/
 `decodeURI`/`decodeURIComponent` are %XX, %uXXXX, \XX and \uXXXX. Apart from these encodings,  Http Inspect will also detect the consecutive whitespaces and normalize it to a single space.
 Http Inspect will also normalize the plus and concatenate the strings. The rule option `file_data ` can be used to access this normalized buffer from the rule.A preprocessor alert with SID 9 and  GID 120 is generated when the obfuscation levels within the Http Inspect is equal to or greater than 2.
+
 
 ```
 Example:
@@ -344,7 +347,8 @@ Content-Type: application/octet-stream\r\n\r\n
 </html>
 ```
 
-The above javascript will generate the preprocessor alert with SID 9 and GIDF 120 when normalize_javascript 
+
+The above javascript will generate the preprocessor alert with SID 9 and GIDF 120 when `normalize_javascript` 
 is turned on.
 
 Http Inspect will also generate a preprocessor alert with GID 120 and SID 11 when there are more than one type 
