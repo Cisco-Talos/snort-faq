@@ -12,4 +12,4 @@ This ruleset is also free for use for individuals and businesses (however, Integ
 
 ## Subscriber
 
-This is the full Snort Subscriber Ruleset, without delay.  For more information on the Snort Subscriber Rule Set, please read our [FAQ](https://snort.org/faq/what-does-having-a-snort-subscriber-rule-set-subscription-entitle-me-to). *This ruleset is also referred to as the "VRT Ruleset" or the "Talos Ruleset"*  This ruelset is generally updated on Tuesday and Thursdays, but may be updated at any time to stay current with emerging threats.
+This is the full Snort Subscriber Ruleset, without delay.  For more information on the Snort Subscriber Rule Set, please read our [FAQ](https://snort.org/faq/what-does-having-a-snort-subscriber-rule-set-subscription-entitle-me-to). *This ruleset is also referred to as the "VRT Ruleset" or the "Talos Ruleset"*  This ruleset is generally updated on Tuesday and Thursdays, but may be updated at any time to stay current with emerging threats.
