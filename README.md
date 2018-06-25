@@ -103,6 +103,8 @@ To checkout all the files:
 
 [Can I receive an invoice for my Snort.org purchase?](https://github.com/Cisco-Talos/snort-faq/blob/366_add_invoice_content/Snort%20Subscriber%20Rule%20Set/Can-I-receive-an-invoice-for-my-Snort-purchase.md)
 
+[Ways to purchase a Snort Subscription](https://github.com/Cisco-Talos/snort-faq/blob/367_ways_to_purchase/Snort%20Subscriber%20Rule%20Set/Ways%20to%20Purchase%20a%20Snort%20Subscription.md)
+
 ### Licensing ###
 
 [What is the GNU GPL?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-GNU-GPL.md)
