@@ -101,6 +101,8 @@ To checkout all the files:
 
 [Where do I go to subscribe to the Snort Subscriber Rule Set?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Where-can-I-go-to-subscribe-to-the-ruleset.md)
 
+[Can I receive an invoice for my Snort.org purchase?](https://github.com/Cisco-Talos/snort-faq/blob/366_add_invoice_content/Snort%20Subscriber%20Rule%20Set/Can-I-receive-an-invoice-for-my-Snort-purchase.md)
+
 ### Licensing ###
 
 [What is the GNU GPL?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-GNU-GPL.md)
