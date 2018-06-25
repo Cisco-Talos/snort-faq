@@ -35,6 +35,8 @@ To checkout all the files:
 
 [What is the list of Snort Supported OSes](https://snort.org/documents/snort-supported-oses)
 
+[I'm a Cisco Partner Purchasing a Subscription For a Customer](https://github.com/Cisco-Talos/snort-faq/blob/368_add_cisco_partner_section/FAQ/Im-a-Cisco-Partner-and-need-to-purchase-a-subscription.md)
+
 ### Lists ###
 
 [What is the mailing list etiquette?](https://github.com/vrtadmin/snort-faq/blob/master/Lists/What-is-the-mailing-list-nettiquete.md)
