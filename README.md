@@ -103,7 +103,7 @@ To checkout all the files:
 
 [Can I receive an invoice for my Snort.org purchase?](https://github.com/Cisco-Talos/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Can-I-receive-an-invoice-for-my-Snort-purchase.md)
 
-[Ways to purchase a Snort Subscription](https://github.com/Cisco-Talos/snort-faq/blob/367_ways_to_purchase/Snort%20Subscriber%20Rule%20Set/Ways%20to%20Purchase%20a%20Snort%20Subscription.md)
+[Ways to purchase a Snort Subscription](https://github.com/Cisco-Talos/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Ways-to-Purchase-a-Snort-Subscription.md)
 
 ### Licensing ###
 
