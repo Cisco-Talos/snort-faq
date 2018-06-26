@@ -35,7 +35,7 @@ To checkout all the files:
 
 [What is the list of Snort Supported OSes](https://snort.org/documents/snort-supported-oses)
 
-[I'm a Cisco Partner Purchasing a Subscription For a Customer](https://github.com/Cisco-Talos/snort-faq/blob/368_add_cisco_partner_section/FAQ/Im-a-Cisco-Partner-and-need-to-purchase-a-subscription.md)
+[I'm a Cisco Partner Purchasing a Subscription For a Customer](https://github.com/Cisco-Talos/snort-faq/blob/master/FAQ/Im-a-Cisco-Partner-and-need-to-purchase-a-subscription.md)
 
 ### Lists ###
 
@@ -101,7 +101,7 @@ To checkout all the files:
 
 [Where do I go to subscribe to the Snort Subscriber Rule Set?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Where-can-I-go-to-subscribe-to-the-ruleset.md)
 
-[Can I receive an invoice for my Snort.org purchase?](https://github.com/Cisco-Talos/snort-faq/blob/366_add_invoice_content/Snort%20Subscriber%20Rule%20Set/Can-I-receive-an-invoice-for-my-Snort-purchase.md)
+[Can I receive an invoice for my Snort.org purchase?](https://github.com/Cisco-Talos/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Can-I-receive-an-invoice-for-my-Snort-purchase.md)
 
 [Ways to purchase a Snort Subscription](https://github.com/Cisco-Talos/snort-faq/blob/367_ways_to_purchase/Snort%20Subscriber%20Rule%20Set/Ways%20to%20Purchase%20a%20Snort%20Subscription.md)
 
