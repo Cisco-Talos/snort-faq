@@ -121,6 +121,9 @@ To checkout all the files:
 
 [What license is used if I contribute a rule for Snort?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-license-is-used-if-I-contribute-a-rule-for-Snort.md)
 
+[Where do I read about the refund policy?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/refund-policy.md)
+
+
 ### Docs ###
 
 All the READMEs from the Snort tarball are uploaded here for simple indexing and reading.
