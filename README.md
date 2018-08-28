@@ -105,6 +105,9 @@ To checkout all the files:
 
 [Ways to purchase a Snort Subscription](https://github.com/Cisco-Talos/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/Ways-to-Purchase-a-Snort-Subscription.md)
 
+[Where do I read about the refund policy?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/refund-policy.md)
+
+
 ### Licensing ###
 
 [What is the GNU GPL?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-is-the-GNU-GPL.md)
@@ -120,8 +123,6 @@ To checkout all the files:
 [What license is used if I contribute code for the Snort Engine?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-license-is-used-if-I-contribute-code-for-the-Snort-Engine.md)
 
 [What license is used if I contribute a rule for Snort?](https://github.com/vrtadmin/snort-faq/blob/master/Licensing/What-license-is-used-if-I-contribute-a-rule-for-Snort.md)
-
-[Where do I read about the refund policy?](https://github.com/vrtadmin/snort-faq/blob/master/Snort%20Subscriber%20Rule%20Set/refund-policy.md)
 
 
 ### Docs ###
