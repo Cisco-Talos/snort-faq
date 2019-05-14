@@ -1,44 +1,58 @@
-There are five states that we place rules in when we create them, four of the states are assigned to policies.
+There are five states that we place rules in when created, four of the states are assigned to policies.
+
 - Connectivity over Security (Connectivity)
 	- Either in "alert" or "drop"
 - Balanced (Balanced)
 	- Either in "alert" or "drop"
 - Security over Connectivity (Security)
 	- Either in "alert" or "drop"
+- Maximum Detection (max-detect)
+	- Either in "alert" or "drop"
 
-The last state is "in no policies".
+The last state is "No policy".
 
-We have some general rules of thumb for these, as outlined below.  These are flexible in meaning as well, and are simply guidelines.
+These policies are maintained by the metadata keyword in the Snort rules language. Each of the default policies is defined below and the requirements for adding a rule to a particular category are outlined and explained.
 
-1. The first, connectivity, means "Connectivity over Security".  Meaning this is a speedy policy for people that insist on blocking only the really known bad with no false positives. 
-	-  CVSS Score = 10
-	-  CVE year is current - 2 (So, for example, 2016, 2015, 2014)
+The criteria and rule category is logically an "OR" condition.
 
-2. The second, balanced, means "Balanced between Connectivity and Security".  Meaning that this is a good starter policy for everyone.  It's quick, has a good base coverage level, and covers the latest threats of the day.  The policy contains everything that is in Connectivity.
-	-  CVSS Score >= 9
-	-  CVE year is current - 2 (For example, 2016, 2015, 2014)
-	-  MALWARE-CNC rules
-	-  EXPLOIT-KIT rules
-	-  SQL Injection rules
-	-  Blacklist rules
+For example for **Balanced**, if the CVSS score is 9 and the vulnerability year is within the last 3 years. It should be in that policy. 
+OR if the category of the rule is MALWARE-CNC, BLACKLIST, SQL-INJECTION, or EXPLOIT-KIT it should be in that policy. 
 
-3. The third, security, means "Security over Connectivity".  Meaning that this is a stringent policy that everyone should strive to get to through tuning.  It's coverage is much more exhaustive, and has some policy-type rules in it.  Rules that will alert on Flash contained within an Excel file and things like that.  This policy contains everything that is in the first two.
-	-  CVSS Score >= 8
-	-  CVE year is current -3 (For example, 2016, 2015, 2014, 2013)
-	-  MALWARE-CNC rules
-	-  EXPLOIT-KIT rules
-	-  SQL Injection rules
-	-  Blacklist rules
-	-  App-detect rules
-	
-4. The fourth, max-detect, means "Maximum Detection".  Generally used for testing, and has very specific criteria.
-	- CVSS Score of 7.5 or greater
-	- Age of the vulnerability is 2005 or greater
-	- MALWARE-CNC Rules
-	- Exploit-Kit
+1. **Connectivity over Security**
+	1. This policy is specifically designed to favor device performance over the security controls in the policy. It should allow a customer to deploy one of our devices with minimal false positives and full rated performance of the box in most network deployments. In addition, this policy should detect the most common and most prevalent threats our customers will experience. 
+	2. *Criteria*:
+		1. CVSS Score = 10
+		2. CVE year is current - 2 (So, for example, 2019, 2018, 2017)
+2. **Balanced**
+	1. This policy is the default policy that is recommended for initial deployments. This policy attempts to balance security needs and performance characteristics. Customers should be able to start with this policy and get a very good block rate with public evaluation tools, and relatively high performance rate with evaluation and testing tools. *It is the default shipping state of the Snort Subscriber Ruleset for Open-Source Snort.*
+	2. *Criteria*:
+		1. CVSS Score >= 9
+		2. CVE year is current - 2 (For example, 2019, 2018, 2017)
+		3. MALWARE-CNC rules
+		4. EXPLOIT-KIT rules
+		5. SQL Injection rules
+		6. Blacklist rules
+		7. Includes the rules in the **Connectivity over Security** policy.
+3. **Security over Connectivity**
+	1. This policy is designed for the small segment of our customer base that is exceptionally concerned about organizational security. Customers deploy this policy in protected networks, that have a lower bandwidth requirements, but much higher security requirements. Additionally, customers care less about false positives and noisy signatures. Application control, and locked down network usage are also concerns to customers deploying this policy. It should provide maximum protection, and application control, but should not bring the network down.
+	2. *Criteria:*
+		1. CVSS Score >= 8
+		2. CVE year is current -3 (For example, 2019, 2018, 2017, 2016)
+		3. MALWARE-CNC rules
+		4. EXPLOIT-KIT rules
+		5. SQL Injection rules
+		6. Blacklist rules
+		7. App-detect rules
+		8. Includes the rules in the **Connectivity over Security** and **Balanced** policies.
+4. **Maximum Detection**
+	1. This ruleset is meant to be used in testing environments and as such is not optimized for performance. False Positives for many of the rules in this policy are tolerated and/or expected and FP investigations will normally not be undertaken. 
+	2. *Criteria:*
+		1. The coverage is required for in field testing
+		2. Includes rules in the Security, Balanced, and Connectivity rule sets.
+		3. Includes all active rules above Sid:10000, unless otherwise specified.
 
-The last state is "in no policies".  This means that we insist that you look through these by product name or CVE in order to turn them on.  These may not have a fast content match, could be false positive prone, or the vulnerability it is covering is not in a very prevalent piece of software.  
+Tlast state is "in no policies".  This means that we insist that you look through these by product name or CVE in order to turn them on.  These may not have a fast content match, could be false positive prone, or the vulnerability it is covering is not in a very prevalent piece of software.  
 
-The way we make the decision about what is "on" or "off" by default when you aren't using the policies, is, if it's in balanced, it's on by default, it's it not in balanced, it's off by default.  There are a ton of exceptions to these rules, but this is the general rule of thumb for the default states.
+**Miscellaneous Policy Information**
 
-The "alert" and "drop" determination is based upon false positive rate, alert rate and a host of other factors, it's rule independent.
+Rules in the listed policies are evaluated on a rule by rule basis. There will be some rules that are older and not in the criteria above that will be in the default policies. The above is the selection criteria for default rules, and is always subject to change based upon the threat landscape
