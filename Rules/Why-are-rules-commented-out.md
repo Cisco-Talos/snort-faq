@@ -51,7 +51,7 @@ OR if the category of the rule is MALWARE-CNC, BLACKLIST, SQL-INJECTION, or EXPL
 		2. Includes rules in the Security, Balanced, and Connectivity rule sets.
 		3. Includes all active rules above Sid:10000, unless otherwise specified.
 
-Tlast state is "in no policies".  This means that we insist that you look through these by product name or CVE in order to turn them on.  These may not have a fast content match, could be false positive prone, or the vulnerability it is covering is not in a very prevalent piece of software.  
+The last state is "in no policies".  This means that we insist that you look through these by product name or CVE in order to turn them on.  These may not have a fast content match, could be false positive prone, or the vulnerability it is covering is not in a very prevalent piece of software.  
 
 **Miscellaneous Policy Information**
 
