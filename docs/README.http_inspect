@@ -1033,64 +1033,46 @@ We'll incorporate them into the default server profiles for HttpInspect.
 
 
 ## Alerts
+======
 
 HTTP Inspect used generator ID 119 and 120.  HTTP Inspect can generate the 
 following alerts under generator ID 119:
 
-
-| SID |  Description|  
-|  ------	| ------	|  
-| 1  |   ASCII encoding|  
-| 2  |   Double decoding attack|  
-| 3  |   U encoding |  
-| 4  |   Bare byte Unicode encoding |  
-| 5  |   Base36 encoding   # Deprecated in Snort 2.9.1 |  
-| 6  |   UTF-8 encoding |  
-| 7  |   IIS Unicode codepoint encoding  |  
-| 8  |   multi-slash encoding |  
-| 9  |   IIS backslash evasion |  
-| 10 |   self-directory traversal |  
-| 11  |  directory traversal |  
-| 12  |  Apache whitespace (tab) |  
-| 13  |  Non-RFC HTTP delimiter |  
-| 14  |  Non-RFC defined char |  
-| 15  |  Oversize request-URI directory |  
-| 16   | Oversize chunk encoding |  
-| 17  |  Unauthorized proxy use detected |  
-| 18 |    Webroot directory traversal |  
-| 19  |  Long header |  
-| 20 |   Max headers |  
-| 21  |  Multiple Content-Length headers |  
-| 22  |  Chunk size mismatch |  
-| 23  |  Invalid True-IP/XFF Orginal Client IP |  
-| 24  |  Multiple Host headers |  
-| 25  |  Hostname exceeds 255 characters |  
-| 27  |  Chunked encoding - excessive consecutive small chunks |  
-| 28  |  Unbounded POST (without Content-`Length` or `Transfer-Encoding: chunked`) |  
-| 29 |    multiple true IPs in a session |  
-| 30 |    both true_client_ip and XFF hdrs present |  
-| 31 |    unknown method |  
-| 32 |   simple request (HTTP/0.9) |
+SID   Description
+---   -----------
+1     ASCII encoding
+2     Double decoding attack
+3     U encoding
+4     Bare byte Unicode encoding
+5     Base36 encoding   # Deprecated in Snort 2.9.1
+6     UTF-8 encoding
+7     IIS Unicode codepoint encoding
+8     multi-slash encoding
+9     IIS backslash evasion
+10    self-directory traversal
+11    directory traversal
+12    Apache whitespace (tab)
+13    Non-RFC HTTP delimiter
+14    Non-RFC defined char
+15    Oversize request-URI directory
+16    Oversize chunk encoding
+17    Unauthorized proxy use detected
+18    Webroot directory traversal
+19    Long header
+20    Max headers
+21    Multiple Content-Length headers
+22    Chunk size mismatch
+23    Invalid True-IP/XFF Orginal Client IP
+24    Multiple Host headers
 
 The following alert is generated with generator ID 120:
 
-| SID |  Description|  
-|  ------	| ------	|  
-| 1  |   Anomalous HTTP server on undefined HTTP port |  
-| 2  |   Invalid HTTP response status code |  
-| 3  |   No Content-Length or Transfer-Encoding in HTTP response  |  
-| 4   |  UTF Normalization failure |  
-| 5   |  HTTP response has UTF-7 charset |  
-| 6   |  HTTP response gzip decompression failed |  
-| 7    | Chunked encoding - excessive consecutive small chunks |  
-| 8   |  Invalid Content-Length or chunk size in request or response |  
-| 9   |  Javascript obfuscation levels exceeds 1 |  
-| 10  |  Javascript consecutive whitespaces exceeds max allowed |  
-| 11 |    Multiple encodings within Javascript obfuscated data |  
-| 12 |   SWF file Deflate decompression failed |  
-| 13 |   SWF file LZMA decompression failed |  
-| 14  |  PDF file Deflate decompression failed |  
-| 15  |  PDF file with unsupported compression type |  
-| 16 |    PDF file with cascaded FlateDecode filters |  
-| 17  |  PDF file parsing error |  
+SID   Description
+---   -----------
+1     Anomalous HTTP server on undefined HTTP port
+2     Invalid HTTP response status code
+3     No Content-Length or Transfer-Encoding in HTTP response
+4     UTF Normalization failure
+5     HTTP response has UTF-7 charset
+
 
