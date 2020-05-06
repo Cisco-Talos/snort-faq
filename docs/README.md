@@ -1,6 +1,6 @@
 Snort Version 2.9.16.0
 
-by Martin Roesch and The Snort Team [http://www.snort.org/snort/snort-team/](http://www.snort.org/snort/snort-team/)
+by The Snort Team [http://www.snort.org/snort/snort-team/](http://www.snort.org/snort/snort-team/)
 
 Distribution Site:
 [http://www.snort.org](http://www.snort.org)
@@ -8,7 +8,7 @@ Distribution Site:
 ******************************************************************************
 COPYRIGHT
 
-Copyright (C) 2014 Cisco and/or its affiliates. All rights reserved.
+Copyright (C) 2014-2020 Cisco and/or its affiliates. All rights reserved.
 
 Copyright (C) 2001-2013 Sourcefire Inc.
 
