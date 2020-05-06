@@ -1,4 +1,4 @@
-Snort Version 2.9.6.0
+Snort Version 2.9.16.0
 
 by Martin Roesch and The Snort Team [http://www.snort.org/snort/snort-team/](http://www.snort.org/snort/snort-team/)
 
