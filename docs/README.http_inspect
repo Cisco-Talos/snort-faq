@@ -1036,6 +1036,7 @@ We'll incorporate them into the default server profiles for HttpInspect.
 HTTP Inspect used generator ID 119 and 120.  HTTP Inspect can generate the 
 following alerts under generator ID 119:
 
+```
 SID   Description
 ---   -----------
 1     ASCII encoding
@@ -1062,9 +1063,11 @@ SID   Description
 22    Chunk size mismatch
 23    Invalid True-IP/XFF Orginal Client IP
 24    Multiple Host headers
+```
 
 The following alert is generated with generator ID 120:
 
+```
 SID   Description
 ---   -----------
 1     Anomalous HTTP server on undefined HTTP port
@@ -1072,5 +1075,5 @@ SID   Description
 3     No Content-Length or Transfer-Encoding in HTTP response
 4     UTF Normalization failure
 5     HTTP response has UTF-7 charset
-
+```
 
