@@ -304,10 +304,15 @@ During the file parsing/decompression process, the preprocessor may generate sev
 
 ```
     120:14 - Deflate decompression error
+    
     120:15 - Located a 'stream' with an unsupported compression ('/Filter') algorithm
+    
     120:16 - Located a 'stream' with cascaded '/FlateDecode' options
+    
                  (e.g. /Filter [ /FlateDecode /FlateDecode ])
+		 
     120:17 - PDF File parsing error
+    
 ```
 
 `normalize_javascript *`
