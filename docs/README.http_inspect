@@ -612,11 +612,11 @@ uses chunk encoding.
 
 This option is an evasion detector for consecutive small chunk sizes when
 either the client or server use Transfer-Encoding: chunked.
-<chunk size> specifies the maximum chunk size for which a chunk will be
-considered small.  <consecutive chunks> specifies the number of consecutive
-small chunks <= <chunk size> before an event will be generated.
+`<chunk size>` specifies the maximum chunk size for which a chunk will be
+considered small.  `<consecutive chunks>` specifies the number of consecutive
+small chunks `<= <chunk size>` before an event will be generated.
 This option is turned off by default.  Maximum values for each are 255 and
-a <chunk size> of 0 disables.
+a `<chunk size>` of 0 disables.
 Events generated are gid:119,sid:27 for client small chunks and gid:120,sid:7
 for server small chunks.
 Example:
@@ -885,12 +885,11 @@ max_headers 0 (number of headers not checked)
 
 The `uricontent` parameter in the snort rule language searches the NORMALIZED
 request URI field.  This means that if you are writing rules that include
-things that are normalized, such as %2f or directory traversals, these
+things that are normalized, such as `%2f` or directory traversals, these
 rules will not alert.  The reason is that the things you are looking for
 are normalized out of the URI buffer.  For example, the URI:
 
-`/scripts/..%c0%af../winnt/system32/cmd.exe?/c+ver
-`
+`/scripts/..%c0%af../winnt/system32/cmd.exe?/c+ver`
 
 will get normalized into:
 
@@ -903,8 +902,7 @@ Another example,
 
 into:
 
-`/cgi-bin/phf?
-`
+`/cgi-bin/phf?`
 
 So when you are writing a `uricontent` rule, you should write the content that
 you want to find in the context that the URI will be normalized.  Don't include
