@@ -324,28 +324,26 @@ The obfuscated data within the javascript functions such as unescape, `String.fr
 Http Inspect will also normalize the plus and concatenate the strings. The rule option `file_data ` can be used to access this normalized buffer from the rule.A preprocessor alert with SID 9 and  GID 120 is generated when the obfuscation levels within the Http Inspect is equal to or greater than 2.
 
 
-```
 Example:
 
-HTTP/1.1 200 OK\r\n
-Date: Wed, 29 Jul 2009 13:35:26 GMT\r\n
-Server: Apache/2.2.3 (Debian) PHP/5.2.0-8+etch10 mod_ssl/2.2.3 OpenSSL/0.9.8c\r\n
-Last-Modified: Sun, 20 Jan 2008 12:01:21 GMT\r\n
-Accept-Ranges: bytes\r\n
-Content-Length: 214\r\n
-Keep-Alive: timeout=15, max=99\r\n
-Connection: Keep-Alive\r\n
-Content-Type: application/octet-stream\r\n\r\n 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>FIXME</title>
-</head>
-<body>
-<script>document.write(unescape(unescape("%48%65%6C%6C%6F%2C%20%73%6E%6F%72%74%20%74%65%61%6D%21")));
-</script>
-</body>
-</html>
-```
+```HTTP/1.1 200 OK\r\n```
+```Date: Wed, 29 Jul 2009 13:35:26 GMT\r\n```
+```Server: Apache/2.2.3 (Debian) PHP/5.2.0-8+etch10 mod_ssl/2.2.3 OpenSSL/0.9.8c\r\n```
+```Last-Modified: Sun, 20 Jan 2008 12:01:21 GMT\r\n```
+```Accept-Ranges: bytes\r\n```
+```Content-Length: 214\r\n```
+```Keep-Alive: timeout=15, max=99\r\n```
+```Connection: Keep-Alive\r\n```
+```Content-Type: application/octet-stream\r\n\r\n```
+```<html xmlns="http://www.w3.org/1999/xhtml">```
+```<head>```
+```<title>FIXME</title>```
+```</head>```
+```<body>```
+```<script>document.write(unescape(unescape("%48%65%6C%6C%6F%2C%20%73%6E%6F%72%74%20%74%65%61%6D%21")));```
+```</script>```
+```</body>```
+```</html>```
 
 
 The above javascript will generate the preprocessor alert with SID 9 and GIDF 120 when `normalize_javascript` 
