@@ -144,8 +144,6 @@ Users can configure HttpInspect by using pre-defined HTTP server
 profiles.  Profiles must be specified as the first server option and
 cannot be combined with any other options except:
 
-
-
 * ports
 * iis_unicode_map
 * allow_proxy_use
@@ -302,18 +300,16 @@ When enabled, the preprocessor will examine the response body for the '%PDF-' fi
 The '`decompress_depth`', '`compress_depth`', and '`unlimited_decompress`' are optionally used to  place limits on the decompression process.  The semantics for PDF files are similar to the gzip decompression process.
 During the file parsing/decompression process, the preprocessor may generate several alerts:
 
-```
-    120:14 - Deflate decompression error
+```    120:14 - Deflate decompression error```
     
-    120:15 - Located a 'stream' with an unsupported compression ('/Filter') algorithm
+```    120:15 - Located a 'stream' with an unsupported compression ('/Filter') algorithm```
     
-    120:16 - Located a 'stream' with cascaded '/FlateDecode' options
+```    120:16 - Located a 'stream' with cascaded '/FlateDecode' options```
     
-                 (e.g. /Filter [ /FlateDecode /FlateDecode ])
+```                 (e.g. /Filter [ /FlateDecode /FlateDecode ])```
 		 
-    120:17 - PDF File parsing error
+```    120:17 - PDF File parsing error```
     
-```
 
 `normalize_javascript *`
 
