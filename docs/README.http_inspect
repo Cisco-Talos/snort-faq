@@ -1067,13 +1067,12 @@ SID   Description
 
 The following alert is generated with generator ID 120:
 
-```
-SID   Description
----   -----------
-1     Anomalous HTTP server on undefined HTTP port
-2     Invalid HTTP response status code
-3     No Content-Length or Transfer-Encoding in HTTP response
-4     UTF Normalization failure
-5     HTTP response has UTF-7 charset
-```
+
+> SID   Description
+> ---   -----------
+> 1     Anomalous HTTP server on undefined HTTP port
+> 2     Invalid HTTP response status code
+> 3     No Content-Length or Transfer-Encoding in HTTP response
+> 4     UTF Normalization failure
+> 5     HTTP response has UTF-7 charset
 
