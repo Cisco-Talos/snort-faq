@@ -145,7 +145,7 @@ profiles.  Profiles must be specified as the first server option and
 cannot be combined with any other options except:
 
 
-```
+
 * ports
 * iis_unicode_map
 * allow_proxy_use
@@ -173,7 +173,6 @@ cannot be combined with any other options except:
 * log_hostname
 * decompress_swf
 * decompress_pdf
-```
 
 These options must be specified after the '`profile`' option.
 
