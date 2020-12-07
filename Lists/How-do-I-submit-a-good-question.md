@@ -1,6 +1,6 @@
 Many of the questions asked on the Snort list contain very poor or incomplete information, so this is a guide on how to ask a good question:
 
-*	Explain the problem you are having. What, exactly, are you are trying to accomplish?
+*	Explain the problem you are having. What, exactly, are you trying to accomplish?
 * Paste the output of 'snort -V' (without the quotes).
 *	Paste the entire command line you are using to start Snort.
 *	Paste any output you receive (an error, a crash, any verbiage that's on the screen.)	
