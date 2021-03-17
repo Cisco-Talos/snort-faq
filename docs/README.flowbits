@@ -15,7 +15,7 @@ The general configuration of the flowbits rule option is:
 </pre>
 
 
-<GROUP_NAME> : This specifies the group to which the flowbits belong. When the
+GROUP_NAME: This specifies the group to which the flowbits belong. When the
 GROUP_NAME isnt specified the flowbits belong to the default group. A particular 
 flowbit can belong to more than one group. The group name should be limited to any 
 alphanumeric string including periods, dashes, and underscores. 
@@ -42,8 +42,7 @@ Usage:
     flowbits:set,bit1,doc;
     flowbits:set,bit2&bit3,doc;
 </pre>
-    
-    
+  
     First rule sets bit1 in doc group, second rule sets bit2 and bit3 in doc group. 
     So doc group has bit 1, bit2 and bit3 set  
     
@@ -75,14 +74,18 @@ Syntax:
    `flowbits:unset,all,group`
    
 Usage:  
-   `flowbits: unset, bit1`  
-   Clear bit1.
+  
+  `flowbits: unset, bit1`  
+  
+  Clear bit1.
    
    `flowbits: unset, bit1&bit2`
-   After this rule, both bit1 and bit2 are cleared.
+  
+  After this rule, both bit1 and bit2 are cleared.
    
    `flowbits: unset, all, doc`
-   This clears all bits in the doc group.
+  
+  This clears all bits in the doc group.
 
 toggle
 ------
@@ -94,11 +97,14 @@ Syntax:
    `flowbits:toggle,all,group`
    
 Usage:
-   `flowbits: toggle, bit1&bit2`
-   If bit1 is 0 and bit2 is 1 before, after this rule, bit1 is 1 and bit2 is 0.
+  
+  `flowbits: toggle, bit1&bit2`
+  
+  If bit1 is 0 and bit2 is 1 before, after this rule, bit1 is 1 and bit2 is 0.
    
    `flowbits:toggle,all,doc`
-   Toggle all the bits in group doc as described above. 
+  
+  Toggle all the bits in group doc as described above. 
 
 isset
 -----
@@ -106,33 +112,46 @@ This keyword checks a bit or several bits to see if it is set.  It returns true 
 false based on the following syntax.
 
 Syntax:  
-   `flowbits:isset, bits` =&gt; Check whether any bit is set
+  
+<pre>
+  `flowbits:isset, bits` =&gt; Check whether any bit is set
    `flowbits:isset, bats` =&gt; Check whether all bits are set
    `flowbits:isset, any, group` =&gt; Check whether any bit in the group is set.
    `flowbits:isset, all, group` =&gt; Check whether all bits in the group are set. 
+</pre>
    
 Usage
+
+<pre>
    `flowbits:isset, bit1|bit2` =&gt; If either bit1 or bit2 is set, return true
    `flowbits:isset, bit1&bit2` =&gt; If both bit1 and bit2 are set, return true, otherwise false
    `flowbits:isset, any, doc` =&gt; If any bit in group doc is set, return true
    `flowbits:isset, all, doc` =&gt; If all the bits in doc group are set, return true 
+</pre>
 
 isnotset
 --------
 This keyword is the reverse of isset.  It returns true if isset is false, it returns
 false if isset is true. Isnotset works on the final result, not on individual bits.
 
-Syntax:  
+Syntax:
+
+<pre>
    `flowbits:isnotset, bits` =&gt; Check whether not any bit is set
    `flowbits:isnotset, bats` =&gt; Check whether not all bits are set
    `flowbits:isnotset, any, group =&gt; Check whether not bit in the group is set.
    `flowbits:isnotset, all, group =&gt; Check whether not all bits in the group are set. 
    
+</pre>
+   
 Usage
+
+<pre>
    `flowbits:isnotset, bit1|bit2` =&gt; If either bit1 or bit2 is set, return true
    `flowbits:isnotset, bit1&bit2` =&gt; If both bit1 and bit2 are set, return true, otherwise false
    `flowbits:isnotset, any, doc` =&gt; If any bit in group doc is set, return true
    `flowbits:isnotset, all, doc` =&gt; If all the bits in doc group are set, return true 
+</pre>
 
 noalert
 -------
@@ -153,9 +172,12 @@ reset all the bits in a group. This always returns true.  There is no bit specif
 Syntax: 
    `flowbits:reset[,group]`
 
-Usage:  
+Usage:
+
+<pre>
    `flowbits:reset` =&gt; reset all the bits in the flow
    `flowbits: reset, doc` =&gt; reset all the bits in the doc group
+</pre>
 
 Sample Rules
 ------------
