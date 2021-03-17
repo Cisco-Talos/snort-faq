@@ -7,8 +7,9 @@ it allows rules to generically track the state of an application protocol.
 
 The general configuration of the flowbits rule option is:
 
+
 <pre>
-    flowbits:<keyword>[bits/bats>],[<GROUP_NAME>];
+    flowbits:&lt;keyword&gt;[&lt;bits/bats&gt;],[<&lt;GROUP_NAME&gt;];
     bits ::= bit[|bits]
     bats ::= bit[&bats]
 </pre>
