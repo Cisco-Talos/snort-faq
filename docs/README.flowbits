@@ -15,7 +15,7 @@ The general configuration of the flowbits rule option is:
 </pre>
 
 
-`&lt;GROUP_NAME&gt;` : This specifies the group to which the flowbits belong. When the
+<GROUP_NAME> : This specifies the group to which the flowbits belong. When the
 GROUP_NAME isnt specified the flowbits belong to the default group. A particular 
 flowbit can belong to more than one group. The group name should be limited to any 
 alphanumeric string including periods, dashes, and underscores. 
