@@ -7,9 +7,12 @@ it allows rules to generically track the state of an application protocol.
 
 The general configuration of the flowbits rule option is:
 
+```
     flowbits:<keyword>[bits/bats>],[<GROUP_NAME>];
     bits ::= bit[|bits]
     bats ::= bit[&bats]
+```
+
 
 <GROUP_NAME> : This specifies the group to which the flowbits belong. When the
 GROUP_NAME isnt specified the flowbits belong to the default group. A particular 
