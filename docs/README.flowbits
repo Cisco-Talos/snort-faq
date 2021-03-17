@@ -114,19 +114,19 @@ false based on the following syntax.
 Syntax:  
   
 <pre>
-  `flowbits:isset, bits` =&gt; Check whether any bit is set
-   `flowbits:isset, bats` =&gt; Check whether all bits are set
-   `flowbits:isset, any, group` =&gt; Check whether any bit in the group is set.
-   `flowbits:isset, all, group` =&gt; Check whether all bits in the group are set. 
+  flowbits:isset, bits =&gt; Check whether any bit is set
+  flowbits:isset, bats =&gt; Check whether all bits are set
+  flowbits:isset, any, group =&gt; Check whether any bit in the group is set.
+  flowbits:isset, all, group =&gt; Check whether all bits in the group are set. 
 </pre>
    
 Usage
 
 <pre>
-   `flowbits:isset, bit1|bit2` =&gt; If either bit1 or bit2 is set, return true
-   `flowbits:isset, bit1&bit2` =&gt; If both bit1 and bit2 are set, return true, otherwise false
-   `flowbits:isset, any, doc` =&gt; If any bit in group doc is set, return true
-   `flowbits:isset, all, doc` =&gt; If all the bits in doc group are set, return true 
+   flowbits:isset, bit1|bit2 =&gt; If either bit1 or bit2 is set, return true
+   flowbits:isset, bit1&bit2 =&gt; If both bit1 and bit2 are set, return true, otherwise false
+   flowbits:isset, any, doc =&gt; If any bit in group doc is set, return true
+   flowbits:isset, all, doc =&gt; If all the bits in doc group are set, return true 
 </pre>
 
 isnotset
@@ -137,20 +137,19 @@ false if isset is true. Isnotset works on the final result, not on individual bi
 Syntax:
 
 <pre>
-   `flowbits:isnotset, bits` =&gt; Check whether not any bit is set
-   `flowbits:isnotset, bats` =&gt; Check whether not all bits are set
-   `flowbits:isnotset, any, group =&gt; Check whether not bit in the group is set.
-   `flowbits:isnotset, all, group =&gt; Check whether not all bits in the group are set. 
-   
+   flowbits:isnotset, bits =&gt; Check whether not any bit is set
+   flowbits:isnotset, bats =&gt; Check whether not all bits are set
+   flowbits:isnotset, any, group =&gt; Check whether not bit in the group is set.
+   flowbits:isnotset, all, group =&gt; Check whether not all bits in the group are set. 
 </pre>
    
 Usage
 
 <pre>
-   `flowbits:isnotset, bit1|bit2` =&gt; If either bit1 or bit2 is set, return true
-   `flowbits:isnotset, bit1&bit2` =&gt; If both bit1 and bit2 are set, return true, otherwise false
-   `flowbits:isnotset, any, doc` =&gt; If any bit in group doc is set, return true
-   `flowbits:isnotset, all, doc` =&gt; If all the bits in doc group are set, return true 
+   flowbits:isnotset, bit1|bit2 =&gt; If either bit1 or bit2 is set, return true
+   flowbits:isnotset, bit1&bit2 =&gt; If both bit1 and bit2 are set, return true, otherwise false
+   flowbits:isnotset, any, doc =&gt; If any bit in group doc is set, return true
+   flowbits:isnotset, all, doc =&gt; If all the bits in doc group are set, return true 
 </pre>
 
 noalert
@@ -175,8 +174,8 @@ Syntax:
 Usage:
 
 <pre>
-   `flowbits:reset` =&gt; reset all the bits in the flow
-   `flowbits: reset, doc` =&gt; reset all the bits in the doc group
+   flowbits:reset =&gt; reset all the bits in the flow
+   flowbits: reset, doc =&gt; reset all the bits in the doc group
 </pre>
 
 Sample Rules
