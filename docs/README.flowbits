@@ -9,13 +9,13 @@ The general configuration of the flowbits rule option is:
 
 
 <pre>
-    flowbits:&lt;keyword&gt;[&lt;bits/bats&gt;],[<&lt;GROUP_NAME&gt;];
+    flowbits:&lt;keyword&gt;[&lt;bits/bats&gt;],[&lt;GROUP_NAME&gt;];
     bits ::= bit[|bits]
     bats ::= bit[&bats]
 </pre>
 
 
-`<GROUP_NAME>` : This specifies the group to which the flowbits belong. When the
+`&lt;GROUP_NAME&gt;` : This specifies the group to which the flowbits belong. When the
 GROUP_NAME isnt specified the flowbits belong to the default group. A particular 
 flowbit can belong to more than one group. The group name should be limited to any 
 alphanumeric string including periods, dashes, and underscores. 
@@ -106,16 +106,16 @@ This keyword checks a bit or several bits to see if it is set.  It returns true 
 false based on the following syntax.
 
 Syntax:  
-   `flowbits:isset, bits` => Check whether any bit is set
-   `flowbits:isset, bats` => Check whether all bits are set
-   `flowbits:isset, any, group` => Check whether any bit in the group is set.
-   `flowbits:isset, all, group` => Check whether all bits in the group are set. 
+   `flowbits:isset, bits` =&gt; Check whether any bit is set
+   `flowbits:isset, bats` =&gt; Check whether all bits are set
+   `flowbits:isset, any, group` =&gt; Check whether any bit in the group is set.
+   `flowbits:isset, all, group` =&gt; Check whether all bits in the group are set. 
    
 Usage
-   `flowbits:isset, bit1|bit2` => If either bit1 or bit2 is set, return true
-   `flowbits:isset, bit1&bit2` => If both bit1 and bit2 are set, return true, otherwise false
-   `flowbits:isset, any, doc` => If any bit in group doc is set, return true
-   `flowbits:isset, all, doc` => If all the bits in doc group are set, return true 
+   `flowbits:isset, bit1|bit2` =&gt; If either bit1 or bit2 is set, return true
+   `flowbits:isset, bit1&bit2` =&gt; If both bit1 and bit2 are set, return true, otherwise false
+   `flowbits:isset, any, doc` =&gt; If any bit in group doc is set, return true
+   `flowbits:isset, all, doc` =&gt; If all the bits in doc group are set, return true 
 
 isnotset
 --------
@@ -123,16 +123,16 @@ This keyword is the reverse of isset.  It returns true if isset is false, it ret
 false if isset is true. Isnotset works on the final result, not on individual bits.
 
 Syntax:  
-   `flowbits:isnotset, bits` => Check whether not any bit is set
-   `flowbits:isnotset, bats` => Check whether not all bits are set
-   `flowbits:isnotset, any, group => Check whether not bit in the group is set.
-   `flowbits:isnotset, all, group => Check whether not all bits in the group are set. 
+   `flowbits:isnotset, bits` =&gt; Check whether not any bit is set
+   `flowbits:isnotset, bats` =&gt; Check whether not all bits are set
+   `flowbits:isnotset, any, group =&gt; Check whether not bit in the group is set.
+   `flowbits:isnotset, all, group =&gt; Check whether not all bits in the group are set. 
    
 Usage
-   `flowbits:isnotset, bit1|bit2` => If either bit1 or bit2 is set, return true
-   `flowbits:isnotset, bit1&bit2` => If both bit1 and bit2 are set, return true, otherwise false
-   `flowbits:isnotset, any, doc` => If any bit in group doc is set, return true
-   `flowbits:isnotset, all, doc` => If all the bits in doc group are set, return true 
+   `flowbits:isnotset, bit1|bit2` =&gt; If either bit1 or bit2 is set, return true
+   `flowbits:isnotset, bit1&bit2` =&gt; If both bit1 and bit2 are set, return true, otherwise false
+   `flowbits:isnotset, any, doc` =&gt; If any bit in group doc is set, return true
+   `flowbits:isnotset, all, doc` =&gt; If all the bits in doc group are set, return true 
 
 noalert
 -------
@@ -154,15 +154,15 @@ Syntax:
    `flowbits:reset[,group]`
 
 Usage:  
-   `flowbits:reset` => reset all the bits in the flow
-   `flowbits: reset, doc` => reset all the bits in the doc group
+   `flowbits:reset` =&gt; reset all the bits in the flow
+   `flowbits: reset, doc` =&gt; reset all the bits in the doc group
 
 Sample Rules
 ------------
 
 <pre>
-alert tcp any 143 -> any any (msg:"IMAP login"; content:"OK LOGIN"; flowbits:set,logged_in;)
-alert tcp any any -> any 143 (msg:"IMAP lsub"; content:"LSUB"; flowbits:isset,logged_in;)
-alert tcp any any -> any 143 (msg:"IMAP LIST WITHOUT LOGIN"; content:"LIST"; flowbits:isnotset,logged_in;)
-alert tcp any any -> any any (msg:"JPG transfer"; content:".JPG"; nocase; flowbits:set,http.jpg,file_type;)
+alert tcp any 143 -&gt; any any (msg:"IMAP login"; content:"OK LOGIN"; flowbits:set,logged_in;)
+alert tcp any any -&gt; any 143 (msg:"IMAP lsub"; content:"LSUB"; flowbits:isset,logged_in;)
+alert tcp any any -&gt; any 143 (msg:"IMAP LIST WITHOUT LOGIN"; content:"LIST"; flowbits:isnotset,logged_in;)
+alert tcp any any -&gt; any any (msg:"JPG transfer"; content:".JPG"; nocase; flowbits:set,http.jpg,file_type;)
 </pre>
